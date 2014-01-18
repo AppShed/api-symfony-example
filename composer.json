@@ -19,7 +19,9 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "appshed/extension-api": "~1.2.5"
+        "appshed/extension-api": "~1.2.6",
+        "guzzle/guzzle": "~3.8.0",
+        "guzzle/log": "~3.8.0"
     },
     "scripts": {
         "post-install-cmd": [

@@ -1,0 +1,24 @@
+# src/Acme/HelloBundle/Resources/config/services.yml
+services:
+    appshed.redmine:
+        class: AppShed\Extensions\RedmineBundle\Services\Redmine
+        arguments: ["@appshed.redmine.client"]
+
+    appshed.redmine.client:
+        class: Guzzle\Http\Client
+        arguments:
+          - "%appshed.redmine.host%"
+          -
+            request.options:
+                headers:
+                    X-Redmine-API-Key: "%appshed.redmine.api_key%"
+        calls:
+          - [addSubscriber, ["@appshed.redmine.log_plugin"]]
+
+    appshed.redmine.log_adapter:
+        class: Guzzle\Log\MonologLogAdapter
+        arguments: ["@logger"]
+
+    appshed.redmine.log_plugin:
+        class: Guzzle\Plugin\Log\LogPlugin
+        arguments: ["@appshed.redmine.log_adapter"]

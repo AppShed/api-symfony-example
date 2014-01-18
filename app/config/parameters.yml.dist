@@ -13,3 +13,6 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    appshed.redmine.host: https://redmine.org
+    appshed.redmine.api_key: YourAPIKey
