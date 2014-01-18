@@ -1,0 +1,5 @@
+app_shed_extensions_redmine:
+    resource: "@AppShedExtensionsRedmineBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
