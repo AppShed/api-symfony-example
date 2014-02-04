@@ -20,8 +20,11 @@ class Redmine
 
     public function getProjects()
     {
-        return $this->client->get('projects.json', [
-            'limit' => 100
-        ])->send()->json()['projects'];
+        return $this->client->get(
+            'projects.json',
+            [
+                'limit' => 100
+            ]
+        )->send()->json()['projects'];
     }
 }

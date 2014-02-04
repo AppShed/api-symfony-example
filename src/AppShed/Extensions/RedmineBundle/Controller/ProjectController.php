@@ -24,7 +24,7 @@ class ProjectController extends Controller
 
         $screen = new Screen("Projects");
 
-        foreach($projects as $project) {
+        foreach ($projects as $project) {
             $item = new Link($project['name']);
             $screen->addChild($item);
         }
