@@ -2,11 +2,11 @@
 
 namespace AppShed\Extensions\RedmineBundle\Controller;
 
-use AppShed\Element\Item\Button;
-use AppShed\Element\Item\Input;
-use AppShed\Element\Item\Text;
-use AppShed\Element\Screen\Screen;
-use AppShed\HTML\Remote;
+use AppShed\Remote\Element\Item\Button;
+use AppShed\Remote\Element\Item\Input;
+use AppShed\Remote\Element\Item\Text;
+use AppShed\Remote\Element\Screen\Screen;
+use AppShed\Remote\HTML\Remote;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;

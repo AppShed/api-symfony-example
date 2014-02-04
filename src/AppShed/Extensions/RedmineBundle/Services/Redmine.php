@@ -6,12 +6,12 @@ namespace AppShed\Extensions\RedmineBundle\Services;
 class Redmine
 {
     /**
-     * @var Guzzle\Http\Client
+     * @var \Guzzle\Http\Client
      */
     protected $client;
 
     /**
-     * @param Guzzle\Http\Client $client
+     * @param \Guzzle\Http\Client $client
      */
     public function __construct($client)
     {
